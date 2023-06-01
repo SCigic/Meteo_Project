@@ -2,6 +2,7 @@ import tkinter as tk
 from tk_gui.FrameDisplayWeather import FrameDisplayWeather
 from tk_gui.FrameDisplayHome import FrameDisplayHome
 from tk_gui.FrameDisplayNote import FrameDisplayNote
+from app_consts.variable_consts import FONT_M
 
 
 class MainWindow(tk.Tk):
@@ -10,7 +11,7 @@ class MainWindow(tk.Tk):
 
 
         self.title("Meteo app - current weather")
-        self.geometry("800x800")
+        self.geometry("700x500")
         self.grid_columnconfigure((0,1),weight=1)
 
         
@@ -35,7 +36,7 @@ class MainWindow(tk.Tk):
         self.button_close_app = tk.Button(self,
                                 text="Close app",
                                 command=self.destroy,
-                                font= ("Verdana", 18))
+                                font= FONT_M)
         self.button_close_app.grid(row=4, column=0, columnspan=2,
                                    padx=5, pady=5) 
 

@@ -6,7 +6,6 @@ if __name__ == "__main__":
     
     db_init()
 
-
     main_window = MainWindow()
     main_window.mainloop()
 

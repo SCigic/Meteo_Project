@@ -24,9 +24,3 @@ class CurrWeather(Base):
         self.current_pressure: float = curr_pressure
         self.current_humidity: float = curr_humidity
 
-    @staticmethod
-    def from_dict(obj) -> 'CurrWeather':
-        _current_temp = float(obj.get("temp"))
-        _current_pressure = float(obj.get("pressure"))
-        _current_humidity = float(obj.get("humidity"))
-        return CurrWeather(_current_temp, _current_pressure, _current_humidity)

@@ -1,5 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk
+from app_consts.variable_consts import FONT_S
 from json_request import return_image, return_note
 
 
@@ -18,7 +19,7 @@ class FrameDisplayNote(tk.LabelFrame):
         
         self.note_label = tk.Label(self,
                                 text=return_note(),
-                                font=('Verdana', 18),
+                                font=FONT_S,
                                 bg="#EAF2F8")
         self.note_label.grid(row=0, column=1, 
                     padx=20, pady=10, sticky="w")

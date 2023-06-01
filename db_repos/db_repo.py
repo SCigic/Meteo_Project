@@ -14,12 +14,7 @@ session = Session()
 def db_init():
         Base.metadata.create_all(db_engine)
       
-
-def create_weather_record(weather_data: CurrWeather):
-        session.add(weather_data)
-        session.commit()
-        
-    
+         
         
 def save_record_to_db():
         
